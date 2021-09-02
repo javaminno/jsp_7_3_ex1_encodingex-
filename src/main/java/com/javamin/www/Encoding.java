@@ -33,11 +33,11 @@ public class Encoding extends HttpServlet {
 		
 		String name = request.getParameter("name");
 		
-		response.setContentType("text/html; charset=EUC=Kr");
+		response.setContentType("text/html; charset=EUC-KR");
 		PrintWriter writer = response.getWriter();
 		
 		writer.println("<html><head></head><body>");
-		writer.println("¾È³çÇÏ¼¼¿ä. "+name+"´Ô ¹Ý°©½À´Ï´Ù.<br/>");
+		writer.println("¾È³çÇÏ¼¼¿ä." + name + "´Ô ¹Ý°©½À´Ï´Ù." + "<br/>");
 		writer.println("</body></html>");
 		
 		writer.close();
@@ -55,11 +55,11 @@ public class Encoding extends HttpServlet {
 		request.setCharacterEncoding("EUC-KR"); // request °´Ã¼ÀÇ ÆÄ¶ó¹ÌÅÍ°ªÀ» ÇÑ±Û·Î ÀÎÄÚµù
 		
 		String name = request.getParameter("name");
-		response.setContentType("text/html; charset=EUC=Kr");
+		response.setContentType("text/html; charset=EUC-KR");
 		PrintWriter writer = response.getWriter();
 		
 		writer.println("<html><head></head><body>");
-		writer.println("¾È³çÇÏ¼¼¿ä. "+ name +"´Ô ¹Ý°©½À´Ï´Ù.<br/>");
+		writer.println("¾È³çÇÏ¼¼¿ä." + name + "´Ô ¹Ý°©½À´Ï´Ù." + "<br/>");
 		writer.println("</body></html>");
 		
 		writer.close();
